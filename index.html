@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="pomodoro-container">
+        <div id="pomodoro-clock">
+            <div id="pomodoro-timer"></div>
+            <div>
+                <input type="text" id="pomodoro-clock-task" placeholder="Enter your task..." />
+            </div>
+            <div id="pomodoro-clock-actions">
+                <button id="pomodoro-start">Start</button>
+                <button id="pomodoro-pause">Pause</button>
+                <button id="pomodoro-stop">Stop</button>
+            </div>
+            <div id="pomodoro-click-title">
+                <span>Changes made here will reflect at the start of the next work break session</span>
+            </div>
+            <div id="pomodoro-clock-actions">
+                <div id="pomodoro-input">
+                    <label>Work duration</label>
+                    <input name="input-work-duration" id="input-work-duration" type="number"
+                        placeholder="type minutes" />
+                </div>
+                <div id="pomodoro-input">
+                    <label>Break duration</label>
+                    <input name="input-break-duration" id="input-break-duration" type="number"
+                        placeholder="type minutes" />
+                </div>
+            </div>
+        </div>
+        <div id="pomodoro-info">
+            <h3>Your Session</h3>
+            <ul id="pomodoro-sessions"></ul>
+        </div>
+
+    </div>
+
+    <script src="timer.js"></script>
+</body>
+
+</html>
