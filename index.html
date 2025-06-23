@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pomodoro Clock Mejorado</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div id="pomodoro-container">
-        <div id="pomodoro-clock">
-            <div id="pomodoro-timer"></div>
-            <div>
-                <input type="text" id="pomodoro-clock-task" placeholder="Enter your task..." />
-            </div>
-            <div id="pomodoro-clock-actions">
-                <button id="pomodoro-start">Start</button>
-                <button id="pomodoro-pause">Pause</button>
-                <button id="pomodoro-stop">Stop</button>
-            </div>
-            <div id="pomodoro-click-title">
-                <span>Changes made here will reflect at the start of the next work break session</span>
-            </div>
-            <div id="pomodoro-clock-actions">
-                <div id="pomodoro-input">
-                    <label>Work duration</label>
-                    <input name="input-work-duration" id="input-work-duration" type="number"
-                        placeholder="type minutes" />
-                </div>
-                <div id="pomodoro-input">
-                    <label>Break duration</label>
-                    <input name="input-break-duration" id="input-break-duration" type="number"
-                        placeholder="type minutes" />
-                </div>
-            </div>
-        </div>
-        <div id="pomodoro-info">
-            <h3>Your Session</h3>
-            <ul id="pomodoro-sessions"></ul>
-        </div>
+  <div id="pomodoro-container">
+    <div id="pomodoro-timer" class="work">25:00</div>
+    <div id="pomodoro-session-type" class="work">Work Session</div>
 
+    <input
+      type="text"
+      id="pomodoro-task"
+      placeholder="Enter your task..."
+      aria-label="Task input"
+    />
+
+    <div id="pomodoro-clock-actions">
+      <button id="start-btn">Start</button>
+      <button id="pause-btn" disabled>Pause</button>
+      <button id="stop-btn" disabled>Stop</button>
     </div>
 
-    <script src="timer.js"></script>
-</body>
+    <div>
+      <label for="work-duration">Work duration (minutes)</label>
+      <input
+        type="number"
+        id="work-duration"
+        min="1"
+        max="120"
+        value="25"
+        aria-label="Work duration input"
+      />
 
+      <label for="break-duration">Break duration (minutes)</label>
+      <input
+        type="number"
+        id="break-duration"
+        min="1"
+        max="60"
+        value="5"
+        aria-label="Break duration input"
+      />
+    </div>
+
+    <div id="pomodoro-info">
+      <h3>Session Log</h3>
+      <ul id="pomodoro-sessions"></ul>
+    </div>
+  </div>
+
+  <script src="timer.js"></script>
+</body>
 </html>
