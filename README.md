@@ -39,25 +39,16 @@ pomodoro-clock/
 
 ## 🔧 Cómo usar
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/pomodoro-clock.git
-   cd pomodoro-clock
+1. Ingresa a 
+ https://studywithmalibu54.netlify.app/
 
-2. Abre `index.html` en tu navegador:
-
-   ```bash
-   open index.html
-   ```
-
-3. Escribe una tarea en el cuadro de texto, configura la duración si lo deseas, y haz clic en **Start**.
+2. Escribe una tarea en el cuadro de texto, configura la duración si lo deseas, y haz clic en **Start**.
 
 ---
 
 ## ⚙️ Personalización
 
 * Cambia los valores por defecto de duración de trabajo y descanso en los campos del temporizador.
-* Puedes modificar los estilos desde `style.css`.
 * Los registros de sesión se almacenan en el `localStorage` del navegador.
 
 ---
