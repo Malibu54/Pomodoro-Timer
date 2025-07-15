@@ -72,5 +72,5 @@ Más información: [Wikipedia - Técnica Pomodoro](https://es.wikipedia.org/wiki
 
 ## 💡 Autor
 
-Creado con ❤️ por [Ori](https://github.com/malibu54)
+Creado con ❤️ por [Lady Vader](https://github.com/malibu54)
 
